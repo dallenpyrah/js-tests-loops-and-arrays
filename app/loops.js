@@ -6,7 +6,11 @@
 // 1*2*3*4 = 24
 
 function factorials(num) {
-
+    let total = 1
+    for(i = 1; i <= num; i++){
+        total *= i
+    }
+    return total
 }
 
 // ------------------------------------------
@@ -17,10 +21,15 @@ function factorials(num) {
 // output: 20
 
 function rangeTotal(n1, n2) {
-
+    let total = 0 
+    for(i = n1; i <= n2; i++){
+       total += i
+    }
+    return total
+    
 }
 
-// ------------------------------------------
+// -----------------------------------------i
 
 
 // 3. Write a function that will take in a starting number, ending number, and a divisor. Iterate
@@ -30,5 +39,9 @@ function rangeTotal(n1, n2) {
 // output: 2
 
 function rangeDivisor(start, end, divisor) {
-
+    let total = 2
+    for(i = start; i <= end; i++){
+        total / divisor
+    }
+    return total
 }
