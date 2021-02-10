@@ -68,11 +68,11 @@ let flights = [{
 
 
 function flightCost(destination, firstClass) {
-    //***hint: use the find method**
-    
+    //***hint: use the find method**//
+    let flight = flights.find((flight) => flight.to.toUpperCase() == destination.toUpperCase());
+	return firstClass ? flight.prices.firstClass : flight.prices.standard;
+
 }
-
-
 // ------------------------------------------
 
 
@@ -90,9 +90,9 @@ let staff = [{ id: 1, name: 'Jon' }, { id: 2, name: 'Yuli' }, { id: 21, name: 'P
 { id: 881, name: 'Paul' }, { id: 0, name: 'Jon' }, { id: 999, name: 'Timma' }]
 
 function findById(id) {
-    let output = staff.id
     
 }
+
 
 // ------------------------------------------
 
